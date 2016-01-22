@@ -13,6 +13,7 @@
 		BC051E9F1C5070C700100CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC051E9E1C5070C700100CB7 /* Assets.xcassets */; };
 		BC051EA21C5070C700100CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC051EA01C5070C700100CB7 /* LaunchScreen.storyboard */; };
 		BC051EAA1C51B6AB00100CB7 /* MeditationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC051EA91C51B6AB00100CB7 /* MeditationModel.swift */; };
+		BC051EAC1C51FB9C00100CB7 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC051EAB1C51FB9C00100CB7 /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC051EA11C5070C700100CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC051EA31C5070C700100CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC051EA91C51B6AB00100CB7 /* MeditationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationModel.swift; sourceTree = "<group>"; };
+		BC051EAB1C51FB9C00100CB7 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BC051E9E1C5070C700100CB7 /* Assets.xcassets */,
 				BC051EA01C5070C700100CB7 /* LaunchScreen.storyboard */,
 				BC051EA31C5070C700100CB7 /* Info.plist */,
+				BC051EAB1C51FB9C00100CB7 /* ColorModel.swift */,
 			);
 			path = SimpleZen;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				BC051E9A1C5070C700100CB7 /* ViewController.swift in Sources */,
 				BC051E981C5070C700100CB7 /* AppDelegate.swift in Sources */,
 				BC051EAA1C51B6AB00100CB7 /* MeditationModel.swift in Sources */,
+				BC051EAC1C51FB9C00100CB7 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +259,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleZen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.SimpleZen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -269,10 +275,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleZen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.SimpleZen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var meditationLabel: UILabel!
     //MeditationModel is the struct I made in the file with the same name
+    
+    
+    @IBOutlet weak var meditationButton: UIButton!
+    
     let meditationModel = MeditationModel()
     
     override func viewDidLoad() {
@@ -25,6 +29,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMeditation() {
+        let randomColor = ColorModel().getThatRandomColorTho()
+        view.backgroundColor = randomColor
+        meditationButton.tintColor = randomColor
         meditationLabel.text = meditationModel.getRandomMeditation()
     }
 
