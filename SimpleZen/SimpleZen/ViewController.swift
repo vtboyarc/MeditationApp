@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var meditationLabel: UILabel!
+    //MeditationModel is the struct I made in the file with the same name
+    let meditationModel = MeditationModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        meditationLabel.text = meditationModel.meditations[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showMeditation() {
+        meditationLabel.text = meditationModel.meditations[1]
+    }
 
 }
 
