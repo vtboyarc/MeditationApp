@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        meditationLabel.text = meditationModel.meditations[0]
+        meditationLabel.text = meditationModel.getRandomMeditation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMeditation() {
-        meditationLabel.text = meditationModel.meditations[1]
+        meditationLabel.text = meditationModel.getRandomMeditation()
     }
 
 }
